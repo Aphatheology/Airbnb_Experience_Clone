@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+	display: flex;
+	justify-content: flex-start;
+	height: 70px;
+	background-color: bisque;
+	box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+	padding: 20px 50px;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.herosection {
+	padding: 20px 50px;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.herosection img {
+	align-self: center;
+    width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.herosection h1 {
+	margin-bottom: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.herosection h1, .herosection p {
+	width: 75%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.gray {
+    color: #918E9B;
+}
+
+/* .card {
+    width: 175px;
+    font-size: 12px;
+	margin: 15px 30px;
+	background-color: bisque;
+} */
+
+.card-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 50px;
+}
+
+
+
+.card {
+    width: 200px;
+    font-size: 12px;
+    flex: 0 0 auto;         
+    display: flex;          
+    flex-direction: column; 
+    border-bottom: 5px solid bisque;
+    position: relative;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    /* @media (max-width: 600px) {
+        
+            width: 450px;
+        
+    } */
+}
+
+.card--image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+    margin-bottom: 5px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.card--star {
+    height: 14px;
+}
+
+.card p:last-child {
+    margin-top: auto;
+    padding-top: 5px;
+}
+
+.card div, .card p {
+    margin: 5px 10px;
+}
+
+.card--badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    section.card-list .card {
+        width: 350px;
+    }
 }
