@@ -1,12 +1,8 @@
-npm install gh-pages — save-dev
-Addd these line below the "private": true,
+## Things I learned/practiced in the process
+- Working with props
+- Using Array.map to make my component work with data provided, if new data is added to the array, another component will be added automatically.
+- Importance of each element Array.map will work on to have a unique key
+- Destructuring at work again
 
-"homepage": "https://your-github-username.github.io/repository-name",
-Add these 2 lines to the Scripts object "predeploy": "npm run build", "deploy": "gh-pages -d build",
-
-Then
-
-npm run deploy
-This will push the necessary files to the gh-pages branch.
-
-To push all your files to the master branch, do these on git git add . git commit -m "your commit message" git push origin master
+## Challenges
+- CSS Media query not working, all solution from Google is involving installing or adding a package which I don't want to use for now.
